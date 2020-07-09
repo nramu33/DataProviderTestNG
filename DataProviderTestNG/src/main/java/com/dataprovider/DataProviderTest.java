@@ -26,7 +26,7 @@ public class DataProviderTest
 	//We are passing the 'name' provided in the @DataProvider annotation
 	
 	@Test(dataProvider="playerDetailsDP")
-	public void PrintPlayerDetails(String username, String password, String firstname, String lastname) {
+	public void printPlayerDetails(String username, String password, String firstname, String lastname) {
 		System.out.println("Username:"+username);
 		System.out.println("Password:"+password);
 		System.out.println("Firstname:"+firstname);
