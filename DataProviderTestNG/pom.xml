@@ -5,7 +5,7 @@
 	<groupId>TPAuto</groupId>
 	<artifactId>DataProviderTestNG</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>HappyTrip</name>
+	<name>DataProviderTestNG</name>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
