@@ -22,7 +22,9 @@ public class DataProviderTest
 	XSSFCell cell1;
 	XSSFCell user;
 	XSSFCell pass;
-
+	
+	//We are passing the 'name' provided in the @DataProvider annotation
+	
 	@Test(dataProvider="playerDetailsDP")
 	public void PrintPlayerDetails(String username, String password, String firstname, String lastname) {
 		System.out.println("Username:"+username);
@@ -32,8 +34,12 @@ public class DataProviderTest
 		System.out.println("******************");
 	}
 	
+	//If we don't specify the name, method name is taken by default as name , i.e;playerData
+	//Its recommended to give name for the dataprovider
+	
 	@DataProvider(name="playerDetailsDP",parallel=true)
 	public Object[][] playerData() throws IOException {
+		//System.getProperty("user.dir") will return current working directory
 		Object[][] arrayObject = getExcelData(System.getProperty("user.dir")+"\\testdata.xlsx","playerDetails");
 		return arrayObject;
 	}
@@ -47,10 +53,13 @@ public class DataProviderTest
 		try  
 		{  
 			file = new File(filePath);
+			
 			//Load the file xlsx file
 			fis = new FileInputStream(file);
+			
 			//creating Workbook instance that refers to .xlsx file  
 			wb = new XSSFWorkbook(fis);  
+			
 			//creating a Sheet object by sheetname
 			XSSFSheet sheet = wb.getSheet(sheetName);
 			
@@ -60,10 +69,12 @@ public class DataProviderTest
 			
 			//Initialize array to read data from excel and return at the end
 			arrayExcelData = new String[totalNoOfRows-1][totalNoOfCols];
+			
 			//We are taking totalNoOfRows-1 as the limit, since we want to skip the first header row (username,password etc from the sheet)
 			for (int row= 0 ; row < totalNoOfRows-1; row++) {
 				for (int col= 0; col < totalNoOfCols; col++) {
 					XSSFCell cell = sheet.getRow(row).getCell(col);
+					
 					//to format data of the cell to string content
 					DataFormatter df = new DataFormatter();
 					arrayExcelData[row][col] = df.formatCellValue(cell);
