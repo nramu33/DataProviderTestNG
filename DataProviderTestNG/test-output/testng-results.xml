@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="800" started-at="2020-07-09T22:40:13 IST" finished-at="2020-07-09T22:40:14 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="800" started-at="2020-07-09T22:40:13 IST" finished-at="2020-07-09T22:40:14 IST">
+      <class name="com.dataprovider.DataProviderTest">
+        <test-method status="PASS" signature="PrintPlayerDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dataprovider.DataProviderTest@551aa95a]" name="PrintPlayerDetails" duration-ms="11" started-at="2020-07-09T22:40:14 IST" data-provider="playerDetailsDP" finished-at="2020-07-09T22:40:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[srtendulkar1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwdBatsman]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sachin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tendulkar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrintPlayerDetails -->
+        <test-method status="PASS" signature="PrintPlayerDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dataprovider.DataProviderTest@551aa95a]" name="PrintPlayerDetails" duration-ms="16" started-at="2020-07-09T22:40:14 IST" data-provider="playerDetailsDP" finished-at="2020-07-09T22:40:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[FirstName]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LastName]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrintPlayerDetails -->
+        <test-method status="PASS" signature="PrintPlayerDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dataprovider.DataProviderTest@551aa95a]" name="PrintPlayerDetails" duration-ms="11" started-at="2020-07-09T22:40:14 IST" data-provider="playerDetailsDP" finished-at="2020-07-09T22:40:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[msdhoni7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwdFinisher]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mahendra]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dhoni]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrintPlayerDetails -->
+        <test-method status="PASS" signature="PrintPlayerDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.dataprovider.DataProviderTest@551aa95a]" name="PrintPlayerDetails" duration-ms="12" started-at="2020-07-09T22:40:14 IST" data-provider="playerDetailsDP" finished-at="2020-07-09T22:40:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sganguly2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwdCaptain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sourav]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ganguly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrintPlayerDetails -->
+      </class> <!-- com.dataprovider.DataProviderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
