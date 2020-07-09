@@ -58,15 +58,13 @@ public class DataProviderTest
 			int totalNoOfRows = sheet.getPhysicalNumberOfRows();
 			int totalNoOfCols = sheet.getRow(0).getPhysicalNumberOfCells();
 			
-			System.out.println("totalNoOfRows"+totalNoOfRows);
-			System.out.println("totalNoOfCols"+totalNoOfCols);
 			//Initialize array to read data from excel and return at the end
 			arrayExcelData = new String[totalNoOfRows-1][totalNoOfCols];
 			//We are taking totalNoOfRows-1 as the limit, since we want to skip the first header row (username,password etc from the sheet)
 			for (int row= 0 ; row < totalNoOfRows-1; row++) {
 				for (int col= 0; col < totalNoOfCols; col++) {
 					XSSFCell cell = sheet.getRow(row).getCell(col);
-					//to format data to string content
+					//to format data of the cell to string content
 					DataFormatter df = new DataFormatter();
 					arrayExcelData[row][col] = df.formatCellValue(cell);
 				}
